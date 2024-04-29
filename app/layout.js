@@ -3,9 +3,10 @@ import localFont from 'next/font/local'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'remixicon/fonts/remixicon.css'
 import SSRProvider from 'react-bootstrap/SSRProvider';
-import "./globals.css";
-import "./override.css";
+import "../public/css/globals.css";
+
 import "../public/css/style.css";
+import "../public/css/override.css";
 import "../public/css/responsive.css";
 
 import Header from "@/components/common/Header";

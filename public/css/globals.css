@@ -1,7 +1,7 @@
 @font-face {
   font-family: "SegoeBold";
   font-weight: 700;
-  src: url("../public/fonts/Segoe-UI-Bold.ttf");
+  src: url("/fonts/Segoe-UI-Bold.ttf");
 }
 :root {
  --textColor:#7c7772;
