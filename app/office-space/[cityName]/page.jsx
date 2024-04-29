@@ -7,7 +7,6 @@ import FeaturedSection from '@/components/common/FeaturedSection'
 import Footer from '@/components/common/Footer'
 
 import Partner from '@/components/common/Partner'
-import React from 'react'
 
 const page = () => {
 
