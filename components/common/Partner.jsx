@@ -33,7 +33,7 @@ const partnerData = [
 
 const Partner = () => {
   return (
-    <div className="py100">
+    <div className="pb100 pt-5">
     <div className="container">
     <div className="sectionHeader  px-3">
           <div className="sectionTitle">
