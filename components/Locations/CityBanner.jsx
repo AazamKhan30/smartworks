@@ -18,35 +18,64 @@ export const cityBannerText = {
 
 
 const CityBanner = () => {
- 
   return (
     <section
-      className={`section-padding vh-100 d-flex bgImg  ${styles.showcase}`} style={{
-        backgroundImage: `url(${cityBannerText.imgUrl})`
-      
-      }} >
-      
+      className={`section-padding vh-100 d-flex bgImg  ${styles.showcase}`}
+      style={{
+        backgroundImage: `url(${cityBannerText.imgUrl})`,
+      }}
+    >
       <Container>
         <Row>
           <Col md={6}>
             <div className={styles.bannerText}>
-             <h1 className={styles.bannerTitle}>{cityBannerText.bannerTitle}</h1>
-              <p className={styles.bannerDesc}>{cityBannerText.bannerDesc}</p>
-              <div className={styles.bannerButtons}>
-              <Link href={cityBannerText.btn1Link} className='siteBtn'>{cityBannerText.btn1Label}</Link>
-              <Link href={cityBannerText.btn2Link} className='siteBtn siteBtnOutline'>{cityBannerText.btn2Label}</Link>
+              <h1
+                className={styles.bannerTitle}
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="600"
+                data-aos-once="false"
+              >
+                {cityBannerText.bannerTitle}
+              </h1>
+              <p
+                className={styles.bannerDesc}
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="600"
+                data-aos-once="false"
+              >
+                {cityBannerText.bannerDesc}
+              </p>
+              <div
+                className={styles.bannerButtons}
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="600"
+                data-aos-once="false"
+              >
+                <Link href={cityBannerText.btn1Link} className="siteBtn">
+                  {cityBannerText.btn1Label}
+                </Link>
+                <Link
+                  href={cityBannerText.btn2Link}
+                  className="siteBtn siteBtnOutline"
+                >
+                  {cityBannerText.btn2Label}
+                </Link>
               </div>
-
-              
             </div>
           </Col>
-   
-          
         </Row>
-        <div className={styles.bottomBox}><p className={styles.bottomText}>{cityBannerText.bottomText}</p><Link href={cityBannerText.bottomBtnLink} className='siteBtnLink'>{cityBannerText.bottomBtnLabel}</Link></div>
+        <div className={styles.bottomBox}>
+          <p className={styles.bottomText}>{cityBannerText.bottomText}</p>
+          <Link href={cityBannerText.bottomBtnLink} className="siteBtnLink">
+            {cityBannerText.bottomBtnLabel}
+          </Link>
+        </div>
       </Container>
     </section>
   );
-}
+};
 
-export default CityBanner
+export default CityBanner;
