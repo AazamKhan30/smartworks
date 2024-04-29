@@ -4,7 +4,7 @@ import React from "react";
 import AOS from "aos";
 import "../../node_modules/aos/dist/aos.css";
 
-const AosAnimation = () => {
+const AOSProvider = () => {
   React.useEffect(() => {
     AOS.init();
   }, []);
@@ -12,4 +12,4 @@ const AosAnimation = () => {
   return <div></div>;
 };
 
-export default AosAnimation;
+export default AOSProvider;

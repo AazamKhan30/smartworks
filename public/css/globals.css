@@ -65,6 +65,7 @@ ul li{
 .siteBtn:hover{
   background: var(--blackColor);
   color:#fff;
+  border-color:var(--blackColor);
 }
 .siteBtnOutline{
   background: transparent;

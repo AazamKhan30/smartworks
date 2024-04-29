@@ -135,26 +135,35 @@ export const navItems = [
 
 const Header = () => {
 
-  const [scrolled, setScrolled]= useState(false)
+//   const [scrolled, setScrolled ] = useState(false)
 
-const scrollHeader = ()=>{
+//  const scrollHeader = ()=>{
 
-  if(window.scrollY > 100){
-    setScrolled(true);
-   
-  }
-  else{
-    setScrolled(false)
-  }
-};
-useEffect(()=>{
-  window.addEventListener("scroll", scrollHeader)
- 
+//   if(window.scrollY > 100){
+//     setScrolled(true);
+    
+//   }
+//   else{
+//     setScrolled(false)
+//   }
+// };
+// useEffect(()=>{
+//   window.addEventListener('scroll', scrollHeader)
 
-}, [])
 
+// }, [])
+useEffect(() => {
+  let elementId = document.getElementById("navbar");
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      elementId?.classList.add("sticky");
+    } else {
+      elementId?.classList.remove("sticky");
+    }
+  });
+}, []);
   return (
-    <Navbar expand="lg" className={scrolled ? 'myNav sticky' : 'myNav'} >
+    <Navbar expand="lg" className="myNav" id="navbar">
       <Container>
         <Link href="../" className="navbar-brand">
           <Image
@@ -165,7 +174,8 @@ useEffect(()=>{
             priority
           />
         </Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <div className='ms-lg-4 d-flex d-md-none align-items-center gap-3 '><div className='searchIcon'><MdOutlineSearch /></div> <Link href="#" className='siteBtn navBtn'>Get Started</Link>   <Navbar.Toggle aria-controls="basic-navbar-nav" /></div>
+     
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center d-flex">
             {navItems.map((item, index) => (
@@ -194,7 +204,7 @@ useEffect(()=>{
               </li>
             ))}
 
-            <div className='ms-lg-4 d-flex align-items-center gap-3'><div className='searchIcon'><MdOutlineSearch /></div> <Link href="#" className='siteBtn navBtn'>Get Started</Link></div>
+            <div className='ms-lg-4 d-none d-md-flex align-items-center gap-3 '><div className='searchIcon'><MdOutlineSearch /></div> <Link href="#" className='siteBtn navBtn'>Get Started</Link></div>
           </Nav>
         </Navbar.Collapse>
       </Container>

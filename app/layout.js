@@ -2,14 +2,15 @@ import { Jost } from "next/font/google";
 import localFont from 'next/font/local'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'remixicon/fonts/remixicon.css'
-
 import "../public/css/globals.css";
 import "../public/css/style.css";
 import "../public/css/override.css";
 import "../public/css/responsive.css";
-
 import Header from "@/components/common/Header";
-import AosAnimation from "@/components/common/AosAnimation";
+import AOSProvider from "@/components/common/AOSProvider";
+import Footer from "@/components/common/Footer";
+
+
 const segoeRegular = localFont({
   src: '../public/fonts/Segoe-UI.ttf',
   display: 'swap',
@@ -31,7 +32,8 @@ export default function RootLayout({ children }) {
       <body >
         <Header/>
         {children}
-          <AosAnimation/>
+          <AOSProvider/>
+          <Footer/>
         </body>
     </html>
   );

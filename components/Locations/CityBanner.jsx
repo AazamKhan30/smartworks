@@ -1,8 +1,9 @@
+"use client"
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Link from 'next/link';
 import styles from '@/styles/citybanner.module.css'
-
+import { motion } from "framer-motion"
 export const cityBannerText = {
   imgUrl: "../images/banner-mumbai.jpg",
   bannerTitle: "Managed office Space in Mumbai",
@@ -25,34 +26,34 @@ const CityBanner = () => {
         backgroundImage: `url(${cityBannerText.imgUrl})`,
       }}
     >
-      <Container>
-        <Row>
-          <Col md={6}>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-md-6'>
             <div className={styles.bannerText}>
-              <h1
+              <motion.h1
                 className={styles.bannerTitle}
-                data-aos="fade-up"
-                data-aos-delay="100"
-                data-aos-duration="600"
-                data-aos-once="false"
+                initial={{ y: 100, opacity:0 }} 
+                whileInView={{ y: 0, opacity:1 }} 
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
               >
                 {cityBannerText.bannerTitle}
-              </h1>
-              <p
+              </motion.h1>
+              <motion.p
                 className={styles.bannerDesc}
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-duration="600"
-                data-aos-once="false"
+                initial={{ y: 75, opacity:0 }} 
+                whileInView={{ y: 0, opacity:1 }} 
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay:0.5 }}
               >
                 {cityBannerText.bannerDesc}
-              </p>
-              <div
+              </motion.p>
+              <motion.div
                 className={styles.bannerButtons}
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="600"
-                data-aos-once="false"
+                initial={{ y: 75, opacity:0 }} 
+                whileInView={{ y: 0, opacity:1 }} 
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay:0.8 }}
               >
                 <Link href={cityBannerText.btn1Link} className="siteBtn">
                   {cityBannerText.btn1Label}
@@ -63,17 +64,17 @@ const CityBanner = () => {
                 >
                   {cityBannerText.btn2Label}
                 </Link>
-              </div>
+              </motion.div>
             </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
         <div className={styles.bottomBox}>
           <p className={styles.bottomText}>{cityBannerText.bottomText}</p>
           <Link href={cityBannerText.bottomBtnLink} className="siteBtnLink">
             {cityBannerText.bottomBtnLabel}
           </Link>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };
