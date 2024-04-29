@@ -1,0 +1,192 @@
+/* Featured Slider css Start here */
+.fBox{
+    padding-right: 15px;
+    padding-right:15px;
+    /* border-right:1px dashed #414040; */
+    position: relative;
+}
+.fBoxInner{
+    position: relative;
+}
+
+.fContent{
+    position: absolute;
+    transition: var(--transition);
+    background: var(--blackColor);
+    color:var(--whiteColor);
+    padding:25px 60px 25px 25px;
+    max-width: 300px;
+    left:10px;
+    width: 100%;
+    bottom:10px;
+    z-index:1;
+}
+.fContent h3 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.fBtn .siteBtn{
+        padding: 10px 30px;
+      
+}
+.fBox:hover .fContent{
+   
+    bottom:15px;
+}
+
+.slick-prev:before, .slick-next:before{
+    display: none;
+}
+.slick-prev:after, .slick-next:after{
+    content:"";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top:2px solid var(--textColor);
+    border-right:2px solid var(--textColor);
+    margin-top:-8px;
+}
+.slick-next:after{
+    transform: translate(-50%) rotate(45deg);
+}
+.slick-prev:after{
+    transform: translate(-50%) rotate(-135deg);
+}
+/* Featured Slider css End here */
+
+
+/* Our centers css start */
+
+.centerItem {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 25px;
+}
+.centerItem .content{
+    background-color: var(--blackColor);
+    padding: 25px 25px 25px 60px;
+    max-width: 345px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    transition: var(--transition);
+}
+.centerItem .content.wrap-color{
+    background: #f4f4f4;
+    transition: var(--transition);
+}
+.centerItem:hover .content {
+    left: 5px;
+    bottom: 25px;
+}
+.centerItem:hover .content.wrap-color {
+    background: var(--blackColor);
+}
+.centerItem .location{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--themeColor);
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+.centerItem  .content h3 {
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.centerItem .content h3 a{
+    color:var(--blackColor);
+    transition: var(--transition);
+}
+.centerItem:hover .content.wrap-color h3 a{
+    color:var(--whiteColor);
+
+}
+.centerText{
+    padding-left: 30px;
+    margin-top: 30px;
+}
+/* footer Section css */
+
+.footerLogo{
+   font-size: 18px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.infoList{
+    position: relative;
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.infoList .infoIcon{
+    font-size: 22px;
+    color:#595959;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.infoList .infoText{
+    color:#fff;
+    margin-bottom: 0;
+    font-size: 16px;
+    transition: 0.3s;
+    
+}
+.infoList .infoText:hover{
+        color:var(--themeColor);
+}
+.footerLogo{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.social h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.socialLinks{
+    padding-left: 0;
+    display: flex;
+    gap:15px;
+}
+.socialLinks li a{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--whiteColor);
+    text-align: center;
+    border-radius: 6px;
+    border:1px solid var(--whiteColor);
+    transition:all 0.3s ease;
+}
+.socialLinks li a:hover{
+    background: var(--whiteColor);
+    color:var(--textColor);
+}
+.footerTitle {
+    font-size: 20px;
+    color:var(--themeColor);
+}
+.footerLinks li{
+    margin-bottom: 5px;
+}
+.footerLinks li a{
+color:var(--whiteColor);
+font-size: 14px;
+opacity: 0.6;
+transition: var(--transition)
+}
+.footerLinks li a:hover{
+    opacity: 1;
+}

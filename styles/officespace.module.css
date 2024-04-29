@@ -1,0 +1,53 @@
+.textBox{
+    position: relative;
+    padding-left: 45px;
+}
+
+
+.vText{
+    font-weight: 500;
+    color: var(--themeColor);
+    font-size: 15.7px;
+    writing-mode: vertical-lr;
+    position: absolute;
+    left: 0;
+    top: 5.8px;
+    letter-spacing: 1.6px;
+}
+.title{
+    font-weight:400;
+    font-size: 36px;
+    margin-bottom:20px;
+}
+
+.desc{
+    font-size: 14px;
+}
+.list{
+    padding-left: 0;
+}
+.list>li{
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 38px;
+    font-size: 15px;
+}
+.list>li>img{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.aboutContent {
+    margin-left: -200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.innerImages{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px){
+    .aboutContent {margin-left:0}
+}

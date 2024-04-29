@@ -1,0 +1,33 @@
+.serviceBox {
+      margin-bottom: 25px;
+        padding: 50px;
+        background-color: var(--whiteColor);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .serviceBox::before {
+        position: absolute;
+        content: "";
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../public/images/shape.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 370px;
+        width: 180px;
+        z-index: -1;
+    }
+    .serviceIcon{
+        margin-bottom: 15px;
+    }
+    .serviceBox h3{
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .serviceBox p {
+        margin-bottom: 25px;
+    }
