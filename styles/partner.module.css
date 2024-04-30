@@ -1,9 +1,12 @@
 .partnerItem{
-    padding: 25px;
-    margin-bottom: 25px;
-    border: 1px dashed #E7E0E0;
-    text-align: center;
-    position: relative;
-    width: 100%;
+        padding: 25px;
+        border: 1px dashed #E7E0E0;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        display: flex!important;
+        min-height: 85px;
+        align-items: center;
+        justify-content: center;
 }
 

@@ -1,5 +1,7 @@
 import { Jost } from "next/font/google";
 import localFont from 'next/font/local'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'remixicon/fonts/remixicon.css'
 import "../public/css/globals.css";
@@ -7,7 +9,6 @@ import "../public/css/style.css";
 import "../public/css/override.css";
 import "../public/css/responsive.css";
 import Header from "@/components/common/Header";
-import AOSProvider from "@/components/common/AOSProvider";
 import Footer from "@/components/common/Footer";
 
 
