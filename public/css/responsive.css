@@ -106,4 +106,12 @@
         writing-mode: unset;
         display: block;
     }
+    .fContent{
+        max-width: 250px;
+        padding:25px 50px 25px 25px;
+    }
+    .fContent h3{
+        line-height: normal;
+        font-size: 18px;
+    }
 }
