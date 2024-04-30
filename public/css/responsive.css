@@ -1,40 +1,56 @@
 @media(max-width:991px) {
-    .navbar-toggler, .navbar-toggler:focus{box-shadow: none;outline: none;border:none}
-    .navbar>.container{display:flex; justify-content: space-between;}
-  
+
+    .navbar-toggler,
+    .navbar-toggler:focus {
+        box-shadow: none;
+        outline: none;
+        border: none
+    }
+
+    .navbar>.container {
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
 
 
-@media(max-width:767px){
-    .navbar-collapse{
+@media(max-width:767px) {
+
+    .navbar-collapse {
         background: var(--whiteColor);
         width: 100%;
         position: absolute;
-        top:85px;
+        top: 85px;
         z-index: 999;
-        left:0;
-        
+        left: 0;
+
     }
-    a.navbar-brand{
-        flex:0 0 35%;
+
+    a.navbar-brand {
+        flex: 0 0 35%;
         max-width: 35%;
     }
+
     .others {
         flex: 0 0 60%;
         max-width: 60%;
         gap: 5px !important;
         justify-content: flex-end;
     }
-    .navbar .navbar-nav .nav-item:not(.dropdown){
+
+    .navbar .navbar-nav .nav-item:not(.dropdown) {
         padding-left: 30px;
         padding-right: 30px;
         width: 100%;
     }
-    .navbar .navbar-nav .nav-item{
+
+    .navbar .navbar-nav .nav-item {
         margin-left: 0;
-        margin-right:0;
+        margin-right: 0;
     }
-    .navbar .navbar-nav .nav-item .dropdown-menu{
+
+    .navbar .navbar-nav .nav-item .dropdown-menu {
         position: static;
         width: 100%;
         box-shadow: none;
@@ -42,33 +58,47 @@
         border: none;
         background: var(--bgLightGray);
         display: none;
-        
+
     }
-    .navbar .navbar-nav .nav-item .dropdown-menu.show{
+
+    .navbar .navbar-nav .nav-item .dropdown-menu.show {
         display: block;
     }
-    .searchIcon{font-size: 18px;}
-    .navBtn{padding: 6px 12px;font-size: 13px;}
-    .navbar-brand img{max-width: 130px;}
-    .siteBtn{
+
+    .searchIcon {
+        font-size: 18px;
+    }
+
+    .navBtn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .navbar-brand img {
+        max-width: 130px;
+    }
+
+    .siteBtn {
         padding: 8px 24px;
         font-size: 14px;
     }
 
-    .centerItem{
+    .centerItem {
         padding-left: 0;
     }
-    .centerItem .content{
+
+    .centerItem .content {
         position: relative;
-        left:0;
-        bottom:0;
+        left: 0;
+        bottom: 0;
         width: 100%;
         padding: 20px;
         max-width: 100%;
     }
-    .centerItem .location{
-        top:0;
-        left:0;
+
+    .centerItem .location {
+        top: 0;
+        left: 0;
         position: relative;
         writing-mode: unset;
         display: block;
