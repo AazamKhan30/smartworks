@@ -82,7 +82,10 @@
         padding: 8px 24px;
         font-size: 14px;
     }
-
+    .navBtn{
+        padding: 6px 12px;
+        font-size: 12px;
+    }
     .centerItem {
         padding-left: 0;
     }

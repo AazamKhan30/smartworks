@@ -18,7 +18,7 @@
     width: 100%;
     background-color: var(--whiteColor);
     box-shadow: 0 4px 34px 0 rgba(0, 0, 0, .1);
-    position: sticky;
+    position: fixed;
     padding-top: 20px;
     padding-bottom: 20px;
     animation: fadeInDown .5s ease-in-out 0s 1 normal none running;
