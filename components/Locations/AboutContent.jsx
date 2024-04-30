@@ -27,7 +27,7 @@ const AboutContent = () => {
             transition={{ duration: 0.6 }}
             >
               <div className="row justify-content-start align-items-end">
-                <div className="col-lg-5 col-5">
+                <div className="col-lg-5 ">
                   <div className={styles.innerImages}>
                   <div className="row g-2">
                     <div className="col-lg-6 col-6">

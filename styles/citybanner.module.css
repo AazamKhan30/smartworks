@@ -46,3 +46,26 @@
     word-break:keep-all
 }
 
+@media(max-width: 767px){
+    .bannerDesc{
+        font-size: 16px;
+        padding-left: 30px;
+    }
+    .bannerTitle{
+    font-size: 36px;
+    line-height: 42px;
+    }
+    .bottomBox{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        position: static;
+        margin-top: 20px;
+       
+    }
+    .bottomText{
+            width: auto;
+            max-width: 100%;
+    }
+}

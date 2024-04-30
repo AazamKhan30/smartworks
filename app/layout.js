@@ -28,11 +28,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${segoeRegular.variable}`}>
+    <html lang="en" className={segoeRegular.className}>
       <body >
         <Header/>
         {children}
-          <AOSProvider/>
+        
           <Footer/>
         </body>
     </html>
