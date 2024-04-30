@@ -172,15 +172,18 @@ useEffect(()=>{
             {navItems.map((item, index) => (
               <li key={index} className="nav-item">
                 {!item.children && (
+                 
                   <Link href={item.url} className="nav-link">
                     {item.label}
                   </Link>
                 )}
-                {item.children && (
+                {item.children &&  (
+                  
                   <NavDropdown renderMenuOnMount={true}
                     title="Explore Locations"
                     id="basic-nav-dropdown"
                   >
+
                     {item.children.map((ch, i) => (
                       <Link
                         href={"/office-space/" + ch.link}
