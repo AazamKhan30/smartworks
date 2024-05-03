@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Link from 'next/link';
 import styles from '@/styles/citybanner.module.css'
 import { motion } from "framer-motion"
+
 export const cityBannerText = {
   imgUrl: "../images/banner-mumbai.jpg",
   bannerTitle: "Managed office Space in Mumbai",

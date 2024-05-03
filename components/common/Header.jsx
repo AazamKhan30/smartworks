@@ -180,7 +180,7 @@ useEffect(()=>{
                 {item.children &&  (
                   
                   <NavDropdown renderMenuOnMount={true}
-                    title="Explore Locations"
+                    title={item.label}
                     id="basic-nav-dropdown"
                   >
 

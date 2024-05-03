@@ -6,32 +6,32 @@ const centersData = [
     {
       id: "1",
       image: "/images/centers/center1.jpg",
-      title: "Lorem ipsum dolor sit amet, consectetur.",
-      desc: "Maple Corporate Tower A and B, Sector-125, Noida, Uttar Pradesh - 201303",
+      title: "Fleet House",
+      desc: "Andheri East Near Marol Naka Metro Station",
       location: "Mumbai",
       link: "#",
       btnLabel: "Know More",
-      btnLink: "#"
+      btnLink: "/office-space/mumbai/fleet-house"
     },
     {
         id: "2",
         image: "/images/centers/center2.jpg",
-        title: "Lorem ipsum dolor sit amet, consectetur.",
-        desc: "Maple Corporate Tower A and B, Sector-125, Noida, Uttar Pradesh - 201303",
+        title: "Times Square Building",
+        desc: "Andheri East Near Marol Naka Metro Station",
         location: "Mumbai",
         link: "#",
         btnLabel: "Know More",
-        btnLink: "#"
+        btnLink: "/office-space/mumbai/Times-Square-Building"
       },
       {
         id: "3",
         image: "/images/centers/center3.jpg",
-        title: "Lorem ipsum dolor sit amet, consectetur.",
-        desc: "Maple Corporate Tower A and B, Sector-125, Noida, Uttar Pradesh - 201303",
+        title: "Paradigm",
+        desc: "Malad West,  Near Mindspace",
         location: "Mumbai",
         link: "#",
         btnLabel: "Know More",
-        btnLink: "#"
+        btnLink: "/office-space/mumbai/paradigm"
       },
       {
         id: "4",
@@ -101,7 +101,7 @@ const Centers = () => {
                   <div className="col-lg-6 col-md-12 mb-5" key={i}>
                     <div className="centerItem">
                       <div className="centerimage">
-                        <Link href={value.link}>
+                        <Link href={value.btnLink} >
                           <Image
                             src={value.image}
                             alt="image"
