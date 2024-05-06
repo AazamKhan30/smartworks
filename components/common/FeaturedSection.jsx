@@ -5,10 +5,10 @@ const FeaturedSection = () => {
   return (
     <section className="pt100 bgBlack text-white">
       <div className="container">
-        <div className="sectionHeader px-3">
+        <div className="sectionHeader ">
           <div className="sectionTitle">
-            <span>Lorem Ipsum</span>
-            <h2 className="mb-3">
+           
+            <h2 className="mb-3 text-white">
               Featured <br />
               properties{" "}
             </h2>

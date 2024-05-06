@@ -1,7 +1,7 @@
 
-import CityBanner from '@/components/Locations/CityBanner'
-import AboutContent from '@/components/Locations/AboutContent'
-import WhyUs from '@/components/Locations/WhyUs'
+import CityBanner from '@/components/cities/CityBanner'
+import AboutContent from '@/components/cities/AboutContent'
+import WhyUs from '@/components/cities/WhyUs'
 import Centers from '@/components/common/Centers'
 import FeaturedSection from '@/components/common/FeaturedSection'
 import Partner from '@/components/common/Partner'

@@ -1,0 +1,226 @@
+
+.centerBanner .sectionHeader h2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+.centerBannerText h2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+.centerBannerText h5 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* Aminities  section css */
+
+.aminitiBox {
+
+    padding: 35px;
+    background-color: var(--bgLightGray);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.aminitiBox:hover {
+    background: var(--blackColor);
+}
+
+.aminitiBox:hover:before {
+    filter: invert(0);
+    opacity: 0.21;
+}
+
+.aminitiBox:hover h3 {
+    color: var(--whiteColor);
+}
+
+.aminitiBox::before {
+    position: absolute;
+    content: "";
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../images/shape2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 172px;
+    filter: invert(1);
+    opacity: 0.1;
+    width: 135px;
+    z-index: -1;
+    transition: var(--transition);
+}
+
+.aminitiIcon {
+    margin-bottom: 25px;
+}
+
+.aminitiBox h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.aminitiBox p {
+    margin-bottom: 25px;
+}
+
+/* Location Details section css */
+.map-area iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.addressBox h4 {
+    color: #969696;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.addressBox p {
+    font-size: 16px;
+    color: var(--textColor);
+}
+
+.distanceBox ul li {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed var(--textColor);
+}
+
+.distanceBox ul li:last-child {
+    border-bottom: none;
+}
+
+.distanceBox ul li span {
+    color: var(--blackColor);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.distanceBox ul li p {
+    color: #969696;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nearbyBox {}
+
+.nearByImage {
+    position: relative;
+    width: 538px;
+    height: 301px;
+
+}
+
+.nearByText {}
+
+.nearByText h4 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nearByText p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/* Contact  section css */
+.contactForm .form-group {
+    margin-bottom: 20px;
+}
+
+.contactForm .sectionTitle {
+    max-width: 550px;
+    margin-bottom: 35px;
+    padding-left: 0;
+}
+
+.contactForm .sectionTitle span {
+    font-weight: 500;
+    color: var(--themeColor);
+    font-size: 15px;
+    writing-mode: vertical-lr;
+    position: absolute;
+    left: 0;
+    top: 8.8px;
+    letter-spacing: 1.6px;
+}
+
+.contactForm .sectionTitle h2 {
+    font-size: 40px;
+    color: var(--blackColor);
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.contactForm .form-group label {
+    font-size: 14px;
+    color: var(--whiteColor);
+    letter-spacing: 1.3px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.contactSec.bg-white .contactForm .form-group label {
+    color: var(--blackColor);
+}
+
+.contactForm .form-group .form-control {
+    background-color: transparent;
+    display: inline-block;
+    width: 100%;
+    padding: 0 0 20px 0;
+    color: #9D9A97;
+    border: none;
+    border-bottom: 1px solid #3A3835;
+    box-shadow: unset;
+    border-radius: 0;
+    outline: 0;
+
+}
+
+.contactForm .form-group .form-control {
+    border-bottom: 1px solid #EDEDED;
+    color: #a7a7a7;
+}
+
+.contactForm .form-group .form-control::placeholder {
+    color: #a7a7a7;
+    transition: var(--transition);
+    text-transform: uppercase;
+}
+
+.contactForm .form-group .form-control:focus::placeholder {
+    color: transparent;
+}
+
+.contact-info-list {
+    padding-left: 30px;
+    margin-bottom: 0;
+
+}
+
+.contact-info-list.single {
+    min-height: 350px;
+}
+
+.contact-info-list li {
+    list-style-type: none;
+    margin-bottom: 50px;
+    color: #6C6661;
+
+}
+
+.contact-info-list li span {
+    color: var(--textColor);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 15px;
+}

@@ -77,10 +77,8 @@ const Partner = () => {
     <div className="container">
     <div className="sectionHeader  px-3">
           <div className="sectionTitle">
-            <span>Clients</span>
-            <h2 className='mb-3'>Our Trusted <br/>Clients</h2>
-           
-          </div>
+           <h2 className='mb-3'>Our Trusted Clients</h2>
+         </div>
      </div>
     {partnerData && (
          <Slider {...settings}>

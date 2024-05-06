@@ -90,8 +90,7 @@ const Centers = () => {
     <div className="container">
       <div className="sectionHeader  px-3">
         <div className="sectionTitle">
-          <span>Centers</span>
-          <h2 className='mb-3'>All <br/>Centers</h2>
+          <h2 className='mb-3'>All Centers</h2>
        </div>
     </div>
       {centersData && (

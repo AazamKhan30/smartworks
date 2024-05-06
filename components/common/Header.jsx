@@ -7,8 +7,10 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import { MdOutlineSearch } from "react-icons/md";
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from "next/navigation";
 
 export const navItems = [
+
   {
     label: "Explore Locations",
     url: "#",
@@ -134,7 +136,7 @@ export const navItems = [
 
 
 const Header = () => {
-
+  const pathname = usePathname();
   const [scrolled, setScrolled ] = useState(false)
 
  const scrollHeader = ()=>{
@@ -154,7 +156,11 @@ useEffect(()=>{
 }, [])
 
   return (
-    <Navbar expand="lg" className={scrolled? 'myNav sticky': 'myNav'} id="navbar">
+    <Navbar
+      expand="lg"
+      className={scrolled ? "myNav sticky" : "myNav"}
+      id="navbar"
+    >
       <Container>
         <Link href="../" className="navbar-brand">
           <Image
@@ -165,40 +171,78 @@ useEffect(()=>{
             priority
           />
         </Link>
-        <div className='ms-lg-4 d-flex d-md-none align-items-center gap-3 others'><div className='searchIcon'><MdOutlineSearch /></div> <Link href="#" className='siteBtn navBtn'>Get Started</Link>   <Navbar.Toggle aria-controls="basic-navbar-nav" /></div>
-     
+        <div className="ms-lg-4 d-flex d-md-none align-items-center gap-3 others">
+          <div className="searchIcon">
+            <MdOutlineSearch />
+          </div>{" "}
+          <Link href="#" className="siteBtn navBtn">
+            Get Started
+          </Link>{" "}
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        </div>
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center d-flex">
             {navItems.map((item, index) => (
               <li key={index} className="nav-item">
                 {!item.children && (
-                 
-                  <Link href={item.url} className="nav-link">
+                  <Link
+                    href={item.url}
+                    className={`${
+                      pathname === item.url ? "active nav-link" : "nav-link"
+                    }`}
+               
+                  >
                     {item.label}
                   </Link>
                 )}
-                {item.children &&  (
-                  
-                  <NavDropdown renderMenuOnMount={true}
+                {item.children && (
+                  <NavDropdown
+                    renderMenuOnMount={true}
                     title={item.label}
                     id="basic-nav-dropdown"
                   >
+                    {item.label === "Explore Locations" &&
+                      item.children.map((ch, i) => (
+                        <Link
+                          href={"/office-space/" + ch.link}
+                          className={`${
+                            pathname === "/office-space/" + ch.link 
+                              ? "active dropdown-item"
+                              : "dropdown-item"
+                          }`}
+                          key={i}
+                        >
+                          {ch.label}
+                        </Link>
+                      ))}
 
-                    {item.children.map((ch, i) => (
-                      <Link
-                        href={"/office-space/" + ch.link}
-                        className="dropdown-item"
-                        key={i}
-                      >
-                        {ch.label}
-                      </Link>
-                    ))}
+                    {item.label === "Resources" &&
+                      item.children.map((ch, i) => (
+                        <Link
+                          href={ch.link}
+                          className={`${
+                            pathname === ch.link
+                              ? "active dropdown-item"
+                              : "dropdown-item"
+                          }`}
+                          key={i}
+                        >
+                          {ch.label}
+                        </Link>
+                      ))}
                   </NavDropdown>
                 )}
               </li>
             ))}
-
-            <div className='ms-lg-4 d-none d-md-flex align-items-center gap-3 '><div className='searchIcon'><MdOutlineSearch /></div> <Link href="#" className='siteBtn navBtn'>Get Started</Link></div>
+            <div className="ms-lg-4 d-none d-md-flex align-items-center gap-3 ">
+              <div className="searchIcon">
+                <MdOutlineSearch />
+              </div>{" "}
+              <Link href="#" className="siteBtn navBtn">
+                Get Started
+              </Link>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>

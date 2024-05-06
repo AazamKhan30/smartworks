@@ -4,9 +4,10 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Link from 'next/link';
 import styles from '@/styles/citybanner.module.css'
 import { motion } from "framer-motion"
+import Image from 'next/image';
 
 export const cityBannerText = {
-  imgUrl: "../images/banner-mumbai.jpg",
+  imgUrl: "/images/banner-mumbai.jpg",
   bannerTitle: "Managed office Space in Mumbai",
   bannerDesc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. sed diam nonu mmy nibh euismod tincidunt ut taorest dolore",
   btn1Label: "Get Started",
@@ -22,11 +23,10 @@ export const cityBannerText = {
 const CityBanner = () => {
   return (
     <section
-      className={`section-padding vh-100 d-flex bgImg  ${styles.showcase}`}
-      style={{
-        backgroundImage: `url(${cityBannerText.imgUrl})`,
-      }}
-    >
+      className={`section-padding vh-100 d-flex bgImg position-relative ${styles.showcase}`}
+        
+    > 
+    <Image src={cityBannerText.imgUrl} alt='City banner' fill/>
       <div className='container'>
         <div className='row'>
           <div className='col-md-6'>

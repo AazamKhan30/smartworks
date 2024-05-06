@@ -7,8 +7,7 @@ const WhyUs = () => {
       <div className="container">
         <div className="sectionHeader d-flex justify-content-between align-items-end px-3">
           <div className="sectionTitle">
-            <span>Why Us</span>
-            <h2>Lorem ipsum dolor sit amet <br/>consectetur adipisicing elit. </h2>
+           <h2>Lorem ipsum dolor sit amet <br/>consectetur adipisicing elit. </h2>
           </div>
           <div className="siteBtnLink">
             <Link href="#">Orci varius natoque</Link>

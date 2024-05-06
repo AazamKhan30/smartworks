@@ -1,33 +1,86 @@
+import Slider from "react-slick";
+import Image from "next/image";
 import Link from "next/link";
 
 
+
+ const centerImages =[
+    {
+      id:1,
+      imgUrl: "/images/centerBanner1.jpg",
+    },
+    {
+      id:2,
+      imgUrl: "/images/centerBanner2.jpg",
+    },
+  ]
+
+ 
+
+
 const CenterBanner = () => {
-
-
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay:true,
+    pauseOnHover:false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows:false,
+  
+   
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    }
   return (
-    <section className="py100 vh-100 d-flex bgImg centerBanner align-items-center"   style={{
-        backgroundImage: `url("../../images/centerBanner.jpg")`,
-      }}>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-8">
-            <div className="sectionHeader px-3">
-              <div className="sectionTitle">
-                <span>Andheri East</span>
-                <h2 className="mb-3 text-white">
-                Times Square <br/>Building
-                </h2>
-                <p className="text-white">
-                With Smartworks, you can rent office space in one of Mumbai’s most coveted IT and business hubs - Times Square in Andheri East. This gold-rated, LEED-certified private IT park offers exciting options for enterprises and businesses looking for a prestigious office.
-                </p>
-                <p className="text-white">With Smartworks, you can set up an office of the future with state-of-the-art meeting rooms, recreational spaces, including reserved parking, power back up and more. We also offer fitness studios and gaming zones, replete with PS4 and foosball tables. This way, your employees can achieve the work-life balance they need. </p>
-                <Link href="#" className="siteBtn mt-3">Get Started</Link>
+    <section className="centerBanner">
+      <Slider {...settings}>
+        {centerImages.map((item, i) => (
+          <div className="position-relative min-vh-100 d-flex align-items-center"key={item.id}>
+            <Image src={item.imgUrl} alt="Center Banner" fill />
+            <div className="container">
+              <div className="row">
+                <div className="col-md-8">
+                  <div className="centerBannerText">
+                    <h2 className="text-white mb-0">
+                      Times Square<br />Building
+                    </h2>
+                    <h5 className="text-white">Andheri East, Mumba</h5>
+                    <Link href="#" className="siteBtn">
+                      Get Started
+                    </Link>
+                  </div>
+                </div>
               </div>
-             
             </div>
           </div>
-        </div>
-      </div>
+        ))}
+      </Slider>
     </section>
   );
 }

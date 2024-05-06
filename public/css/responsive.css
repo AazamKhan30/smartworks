@@ -17,6 +17,9 @@
 
 @media(max-width:767px) {
 
+    .centerBannerText h2{
+        font-size: 42px;
+    }
     .navbar-collapse {
         background: var(--whiteColor);
         width: 100%;
@@ -97,9 +100,24 @@
         width: 100%;
         padding: 20px;
         max-width: 100%;
+        display: block;
     }
-
-    .centerItem .location {
+    .sectionHeader{
+        flex-direction: column;
+        align-items: flex-start!important;
+        gap:15px;
+       
+    }
+    .sectionTitle{
+        padding-left: 0;
+    }
+    .sectionHeader h2, .contactForm .sectionTitle h2{
+        font-size: 30px;
+    }
+    .sectionTitle h2 br{
+        display: none;
+    }
+    .centerItem .location, .sectionHeader span, .contactForm .sectionTitle span {
         top: 0;
         left: 0;
         position: relative;
@@ -114,4 +132,23 @@
         line-height: normal;
         font-size: 18px;
     }
+
+
+    
+    /* city center page css start */
+    .centerBanner .sectionHeader h2{
+        font-size: 42px;
+    }
+    .centerBanner .sectionHeader p{
+        font-size: 14px;
+    }
+    .contact-info-list.single{
+        min-height: 0;
+        margin-top: 30px;
+        padding-left: 0;
+    }
+    .nearByImage{
+        width: 100%;
+    }
+     /* city center page css End */
 }

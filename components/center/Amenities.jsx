@@ -96,77 +96,75 @@ const amenitiesData = [
   ];
 
 const Amenities = () => {
-    const settings = {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      };
+  const settings = {
+    dots: false,
+    infinite: true,
+    autoplay:true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows:true,
+   
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
 
+
+  };
   return (
-    <section className="py-5 amenitiesSlider">
+    <section className=" amenitiesSlider">
       <div className="container">
-      <div className="sectionHeader px-3 mb-5">
+        <div className="sectionHeader mb-5">
           <div className="sectionTitle">
-            <span>Amenities</span>
+         
             <h2 className="mb-3">
-           Aminties for <br/>this Office
+              Amenities 
             </h2>
-           
           </div>
         </div>
-
-        <div className="slider-container">
+       <div className="slider-container">
           <Slider {...settings}>
-            <div>
-
-              <div className="row">
-                {amenitiesData && amenitiesData.slice(0, 8).map((item, index)=>(
-                      <div className="col-md-3" key={index}>
-                      <div className="aminitiBox">
-                        <div className="aminitiIcon">
-                          <Image
-                            src={item.icon}
-                            width={48}
-                            height={48}
-                            alt="ameniti icon"
-                          />
-                        </div>
-                        <div className="amenitiText">
-                          <h3>
-                            <Link href="">{item.title}</Link>
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                ))}
-              
-              
-              </div>
-            </div>
-            <div>
-              <div className="row">
-              {amenitiesData && amenitiesData.slice(8, 16).map((item, index)=>(
-                      <div className="col-md-3" key={index}>
-                      <div className="aminitiBox">
-                        <div className="aminitiIcon">
-                          <img
-                            src={item.icon}
-                            width={50}
-                            height={50}
-                            alt="ameniti icon"
-                          />
-                        </div>
-                        <div className="amenitiText">
-                          <h3>
-                            <Link href="">{item.title}</Link>
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                ))}
-              </div>
-            </div>
+            {amenitiesData &&
+              amenitiesData.map((item, index) => (
+                <div className="aminitiBox" key={index}>
+                  <div className="aminitiIcon">
+                    <Image
+                      src={item.icon}
+                      width={48}
+                      height={48}
+                      alt="ameniti icon"
+                    />
+                  </div>
+                  <div className="amenitiText">
+                    <h3>
+                      <Link href="">{item.title}</Link>
+                    </h3>
+                  </div>
+                </div>
+              ))}
           </Slider>
         </div>
       </div>

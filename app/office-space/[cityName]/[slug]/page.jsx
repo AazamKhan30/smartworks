@@ -7,18 +7,22 @@ import Gallery from '@/components/center/Gallery'
 import { Suspense } from 'react'
 import Amenities from '@/components/center/Amenities'
 import LocationDetails from '@/components/center/LocationDetails'
+import Overview from '@/components/center/Overview'
+import NearbyBuildings from '@/components/center/NearbyBuildings'
 
 const centerPage = () => {
  
   return (
     <>
-    <CenterBanner/>
-    <Amenities/>
-    <Gallery/>
-    <LocationDetails/>
-    <ContactForm/>
+      <CenterBanner />
+      <Overview />
+      <Amenities />
+      <Gallery />
+      <LocationDetails />
+      <NearbyBuildings/>
+      <ContactForm />
     </>
-  )
+  );
 }
 
 export default centerPage

@@ -1,5 +1,5 @@
 import GoogleMap from "./GoogleMap"
-import NearbyBuildings from "./NearbyBuildings"
+
 
 const distanceData = [
     {
@@ -31,23 +31,29 @@ const LocationDetails = () => {
   return (
     <section className='locationDetails'>
         <div className="container">
-        <div className="sectionHeader px-3 mb-5">
+        <div className="sectionHeader mb-5">
           <div className="sectionTitle">
-            <span>Locations</span>
-            <h2 className="mb-3">
-               Location <br/>Details
+         <h2 className="mb-3">
+               Location Details
             </h2>
            
           </div>
         </div>
             <div className="row">
-                <div className="col-md-8">
-                    <GoogleMap/>
-                    <NearbyBuildings/>
+                <div className="col-md-8 mb-3 mb-md-0">
+                  
+
+                  
+                   <GoogleMap/>
+                   
                 </div>
                 <div className="col-md-4">
-                    <div className="distanceDetails pe-5">
-                        <ul>
+                  <div className="addressBox">
+                    <h4>Address</h4>
+                    <p>Tower C, Andheri - Kurla Rd, Chimatpada, Marol, Andheri East, Mumbai, Maharashtra 400056</p>
+                  </div>
+                    <div className="distanceBox pe-5">
+                        <ul className="ps-0">
                             {distanceData && distanceData.map((item, i)=>(
                                 <li key={item.id}>
                                     <span className="distanceTitle">{item.label}</span>

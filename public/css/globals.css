@@ -8,6 +8,7 @@
   --textColor: #7c7772;
   --whiteColor: #ffffff;
   --blackColor: #000000;
+  --headingColor: #111111;
   --themeColor: #ffd500;
   --bgLightGray: #f0f0f0;
   --transition: .6s;
@@ -130,11 +131,12 @@ ul li {
   padding-left: 0;
   position: relative;
   margin-bottom: 50px;
+
 }
 
 .sectionTitle {
   max-width: 830px;
-  padding-left: 45px;
+  
 }
 
 .sectionHeader span {
@@ -150,9 +152,10 @@ ul li {
 }
 
 .sectionHeader h2 {
-  font-size: 36px;
-  font-weight: 400;
+  font-size: 40px;
+  font-weight:400;
   margin-bottom: 0;
+  color:var(--headingColor);
 }
 
 .py100 {

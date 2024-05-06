@@ -1,8 +1,12 @@
 .showcase{
     position: relative;
     padding-top: 80px;
+    z-index: 1;
   
 
+}
+.showcase>img{
+    z-index: -1;
 }
 .bannerText{
     color:var(--whiteColor);
