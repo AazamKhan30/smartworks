@@ -238,7 +238,7 @@ useEffect(()=>{
 
                     {item.label === "Resources" &&
                       item.children.map((ch, i) => (
-                        <Link
+                        <Nav.Link as={Link}
               
                           href={ch.link}
                           className={`${
@@ -249,7 +249,7 @@ useEffect(()=>{
                           key={i}
                         >
                           {ch.label}
-                        </Link>
+                        </Nav.Link>
                       ))}
                   </NavDropdown>
                 )}
