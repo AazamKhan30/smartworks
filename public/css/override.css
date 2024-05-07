@@ -1,9 +1,10 @@
 .myNav {
     height: auto;
-    background-color: transparent;
+    background-color:var(--whiteColor);
     padding: 15px 0;
     transition: var(--transition);
     height: 85px;
+    position: fixed;
 }
 
 .navbar,
@@ -173,4 +174,24 @@
     color: var(--themeColor);
     transition: var(--transition);
     cursor: pointer;
+}
+.formModal .modal-body{
+    padding:50px;
+}
+.modal-header{
+    border:none;
+    padding: 0;
+}
+.modal-title{
+    font-size: 30px;
+}
+button.btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.formModal .siteBtn{
+        position: absolute;
+        bottom:-25px;
+
 }

@@ -24,7 +24,7 @@ const ContactForm = () => {
     console.log("Form submitted:", formData);
   };
   return (
-    <section className="contactSec py80 bg-white">
+    <section className="contactSec py80 bg-white" id='contactForm'>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-6 col-md-12 pe-md-5">

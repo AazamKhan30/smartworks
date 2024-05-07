@@ -71,7 +71,7 @@ const CenterBanner = () => {
                       Times Square<br />Building
                     </h2>
                     <h5 className="text-white">Andheri East, Mumba</h5>
-                    <Link href="#" className="siteBtn">
+                    <Link href="#contactForm" className="siteBtn">
                       Get Started
                     </Link>
                   </div>

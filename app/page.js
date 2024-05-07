@@ -10,15 +10,10 @@ import Partner from '@/components/common/Partner'
 
 export default function Home() {
   return (
-    <>
+    <div className='vh-100 d-flex align-items-center justify-content-center'>
   
-    <CityBanner/>
-    <AboutContent/>
-    <FeaturedSection/> 
-    <WhyUs/>
-    <Centers/>
-    <Partner/>
+    <h1>Coming Soon</h1>
    
-</>
+</div>
   );
 }

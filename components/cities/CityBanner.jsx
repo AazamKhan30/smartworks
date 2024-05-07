@@ -5,15 +5,12 @@ import Link from 'next/link';
 import styles from '@/styles/citybanner.module.css'
 import { motion } from "framer-motion"
 import Image from 'next/image';
+import FormModal from '../common/FormModal';
 
 export const cityBannerText = {
   imgUrl: "/images/banner-mumbai.jpg",
   bannerTitle: "Managed office Space in Mumbai",
   bannerDesc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. sed diam nonu mmy nibh euismod tincidunt ut taorest dolore",
-  btn1Label: "Get Started",
-  btn2Label: "How it Work",
-  btn1Link: "#",
-  btn2Link: "#",
   bottomText: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.",
   bottomBtnLink: "#",
   bottomBtnLabel: "Lorem Ipsum"
@@ -56,15 +53,7 @@ const CityBanner = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay:0.8 }}
               >
-                <Link href={cityBannerText.btn1Link} className="siteBtn">
-                  {cityBannerText.btn1Label}
-                </Link>
-                <Link
-                  href={cityBannerText.btn2Link}
-                  className="siteBtn siteBtnOutline"
-                >
-                  {cityBannerText.btn2Label}
-                </Link>
+              <FormModal/>
               </motion.div>
             </div>
           </div>

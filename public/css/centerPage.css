@@ -130,9 +130,6 @@
 }
 
 /* Contact  section css */
-.contactForm .form-group {
-    margin-bottom: 20px;
-}
 
 .contactForm .sectionTitle {
     max-width: 550px;
@@ -157,8 +154,11 @@
     margin-bottom: 0;
     font-weight: 400;
 }
+.form-group {
+    margin-bottom: 20px;
+}
 
-.contactForm .form-group label {
+.form-group label {
     font-size: 14px;
     color: var(--whiteColor);
     letter-spacing: 1.3px;
@@ -166,11 +166,11 @@
     margin-bottom: 30px;
 }
 
-.contactSec.bg-white .contactForm .form-group label {
+ .contactForm .form-group label {
     color: var(--blackColor);
 }
 
-.contactForm .form-group .form-control {
+.form-group .form-control {
     background-color: transparent;
     display: inline-block;
     width: 100%;
@@ -184,18 +184,18 @@
 
 }
 
-.contactForm .form-group .form-control {
+.form-group .form-control {
     border-bottom: 1px solid #EDEDED;
     color: #a7a7a7;
 }
 
-.contactForm .form-group .form-control::placeholder {
+.form-group .form-control::placeholder {
     color: #a7a7a7;
     transition: var(--transition);
     text-transform: uppercase;
 }
 
-.contactForm .form-group .form-control:focus::placeholder {
+.form-group .form-control:focus::placeholder {
     color: transparent;
 }
 
