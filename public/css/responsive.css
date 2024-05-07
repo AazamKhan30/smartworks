@@ -29,7 +29,11 @@
         left: 0;
 
     }
-
+    .navbar .navbar-nav {
+        height: 80vh;
+        overflow-y: auto;
+        
+    }
     a.navbar-brand {
         flex: 0 0 35%;
         max-width: 35%;

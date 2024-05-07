@@ -12,81 +12,89 @@ import { usePathname } from "next/navigation";
 export const navItems = [
 
   {
+     id:1,
     label: "Explore Locations",
     url: "#",
     children: [
         {
+          id: 1-1,
           label: "Delhi-NCR",
           link: "delhi-ncr/",
       
         },
         {
+          id: 1-2,
           label: "Bangalore",
           link: "bangalore",
        
         },
   
         {
+          id: 1-3,
           label: "Mumbai",
           link: "mumbai",
    
         },
         {
+          id: 1-4,
           label: "Pune",
           link: "pune",
   
         },
-        {
+        {  
+            id: 1-5,
             label: "Chennai",
             link: "chennai",
     
         },
-        {
+        {  
+            id: 1-6,
             label: "Hyderabad",
             link: "hyderabad",
     
         },
-        {
+        {   
+            id: 1-7,
             label: "Kolkata",
             link: "kolkata",
     
         },
-        {
+        {   id: 1-8,
             label: "Jaipur",
             link: "jaipur",
     
         },
-        {
+        {  id: 1-10,
             label: "Indore",
             link: "indore",
     
         },
-        {
+        {   id: 1-11,
             label: "Ahmedabad",
             link: "ahmedabad",
     
         },
 
-        {
+        {  id: 1-12,
             label: "Kochi",
             link: "kochi",
     
         },
 
-        {
+        {  id: 1-14,
             label: "Noida",
             link: "noida",
     
         },
 
-        {
+        {   id: 1-12,
             label: "Dehi",
             link: "delhi",
     
         },
 
         
-        {
+        {   id: 1-13,
             label: "Gurgaon",
             link: "gurgaon",
     
@@ -94,30 +102,36 @@ export const navItems = [
       ]
   },
   {
+    id:2,
     label: "Enterprise",
     url: "/enterprise",
   },
   {
+    id:3,
     label: "Resources",
     url: "#",
     children: [
       {
+        id:3-1,
         label: "Blog",
         link: "#",
     
       },
-      {
+      { 
+        id:3-2,
         label: "Newsroom",
         link: "#",
      
       },
 
       {
+        id:3-3,
         label: "Insights",
         link: "#",
  
       },
       {
+        id:3-4,
         label: "Careers",
         link: "#",
 
@@ -125,10 +139,12 @@ export const navItems = [
     ],
   },
   {
+    id:4,
     label: "About",
     url: "#",
   },
   {
+    id:5,
     label: "Contact",
     url: "#",
   },
@@ -157,7 +173,7 @@ useEffect(()=>{
 
   return (
     <Navbar collapseOnSelect
-      expand="lg"
+    expand="lg" 
       className={scrolled ? "myNav sticky" : "myNav"}
       id="navbar"
     >
@@ -186,7 +202,8 @@ useEffect(()=>{
             {navItems.map((item, index) => (
               <li key={index} className="nav-item">
                 {!item.children && (
-                  <Link
+                  <Nav.Link as={Link}
+                
                     href={item.url}
                     className={`${
                       pathname === item.url ? "active nav-link" : "nav-link"
@@ -194,7 +211,7 @@ useEffect(()=>{
                
                   >
                     {item.label}
-                  </Link>
+                  </Nav.Link>
                 )}
                 {item.children && (
                   <NavDropdown
@@ -204,7 +221,8 @@ useEffect(()=>{
                   >
                     {item.label === "Explore Locations" &&
                       item.children.map((ch, i) => (
-                        <Link
+                        <Nav.Link as={Link}
+                       
                           href={"/office-space/" + ch.link}
                           className={`${
                             pathname === "/office-space/" + ch.link 
@@ -212,14 +230,16 @@ useEffect(()=>{
                               : "dropdown-item"
                           }`}
                           key={i}
+                          
                         >
                           {ch.label}
-                        </Link>
+                        </Nav.Link>
                       ))}
 
                     {item.label === "Resources" &&
                       item.children.map((ch, i) => (
                         <Link
+              
                           href={ch.link}
                           className={`${
                             pathname === ch.link

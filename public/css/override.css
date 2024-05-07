@@ -53,6 +53,7 @@
 
 .navbar .navbar-nav .nav-item .dropdown-item {
     transition: var(--transition);
+    padding: 8px 16px;
 }
 .navbar .navbar-nav .nav-item .dropdown-item.active{
     color:var(--themeColor);
