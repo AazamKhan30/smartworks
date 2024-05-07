@@ -20,7 +20,7 @@ const galleryImageData = [
 
   {
     id: "8",
-    image: "/images/gallery8.jpg",
+    image: "/images/gallery/galleryImg1.jpg",
   },
 ];
 const Gallery = () => {
