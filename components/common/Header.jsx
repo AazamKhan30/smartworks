@@ -114,26 +114,26 @@ export const navItems = [
       {
         id:3-1,
         label: "Blog",
-        link: "#",
+        link: "/blog",
     
       },
       { 
         id:3-2,
         label: "Newsroom",
-        link: "#",
+        link: "/newsroom",
      
       },
 
       {
         id:3-3,
         label: "Insights",
-        link: "#",
+        link: "/insights",
  
       },
       {
         id:3-4,
         label: "Careers",
-        link: "#",
+        link: "/careers",
 
       },
     ],
@@ -141,12 +141,12 @@ export const navItems = [
   {
     id:4,
     label: "About",
-    url: "#",
+    url: "/about",
   },
   {
     id:5,
     label: "Contact",
-    url: "#",
+    url: "/contact",
   },
 ];
 
@@ -246,7 +246,7 @@ useEffect(()=>{
                               ? "active dropdown-item"
                               : "dropdown-item"
                           }`}
-                          key={i}
+                          key={ch.id}
                         >
                           {ch.label}
                         </Nav.Link>
