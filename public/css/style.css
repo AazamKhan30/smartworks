@@ -1,4 +1,8 @@
-/* footer Section css */
+
+@import url("cityPage.css");
+@import url("centerPage.css");
+@import url("override.css");
+/* * footer Section css */
 
 .footerLogo{
     font-size: 18px;

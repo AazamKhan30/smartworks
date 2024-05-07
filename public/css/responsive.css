@@ -136,6 +136,14 @@
 
     
     /* city center page css start */
+    .centerSlide{
+            min-height: 0!important;
+            padding: 60px 0;
+    }
+    .centerBanner .slick-dots{
+        bottom:15px;
+        padding-left: 0;
+    }
     .centerBanner .sectionHeader h2{
         font-size: 42px;
     }
