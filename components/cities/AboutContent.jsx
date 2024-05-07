@@ -46,17 +46,14 @@ const AboutContent = () => {
                 </div>
                 <div className="col-lg-7">
                 <div className={styles.textBox}>
-              <span className={styles.vText}>ABOUT US</span>
+            
               <h2 className={styles.title}>
                 Office space for
                 <br />
                 enterprises in Mumbai
               </h2>
               <p className={styles.desc}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
 
               <ul className={styles.list}>
@@ -68,7 +65,7 @@ const AboutContent = () => {
                     height={10}
                    
                   />
-                  Innovative Design Approach
+               Lorem ipsum dolor sit amet
                 </li>
                 <li>
                   <Image
@@ -78,7 +75,7 @@ const AboutContent = () => {
                     height={10}
                     
                   />
-                  Highly Skilled Expertise and Specialization
+                  Sed do eiusmod tempor incididunt ut labore
                 </li>
                 <li>
                   <Image
@@ -88,18 +85,9 @@ const AboutContent = () => {
                     height={10}
                   
                   />
-                  A client-centric approach for an architectural company
+                  Risus commodo viverra maecenas
                 </li>
-                <li>
-                  <Image
-                    src={arrowIcon}
-                    alt="arrow"
-                    width={28}
-                    height={10}
-                  
-                  />
-                  Sustainable Design Practices
-                </li>
+           
               </ul>
 
               <div className=" pt-4">

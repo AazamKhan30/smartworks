@@ -106,37 +106,47 @@
 .fBox{
     padding-right: 15px;
     padding-right:15px;
-  
+    transition: var(--transition);
     position: relative;
 }
 .fBoxInner{
     position: relative;
+    overflow: hidden;
+}
+.fBoxInner .overlay{
+    background: rgba(0,0,0,0.75);
+}
+.fBoxInner .hoverBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    padding: 30px;
+    transition: var(--transition);
+    opacity: 0;
+}
+.fBox:hover .fBoxInner .hoverBox{
+    opacity: 1;
+}
+.fContent{
+  transition: var(--transition);
+    color:var(--whiteColor);
+    width: 100%;
 }
 
-.fContent{
-    position: absolute;
-    transition: var(--transition);
-    background: var(--blackColor);
-    color:var(--whiteColor);
-    padding:25px 60px 25px 25px;
-    max-width: 300px;
-    left:10px;
-    width: 100%;
-    bottom:10px;
-    z-index:1;
-}
 .fContent h3 {
     font-size: 22px;
     font-weight: 400;
     line-height: 1.5;
 }
-.fBtn .siteBtn{
-        padding: 5px 30px;
+.fBtn.siteBtn{
+ padding: 5px 30px;
+ 
       
 }
-.fBox:hover .fContent{
-   
-    bottom:15px;
+.fBtn.siteBtn:hover{
+    border-color:var(--themeColor);
+    background: transparent;
 }
 
 .slick-prev:before, .slick-next:before{
@@ -201,8 +211,50 @@
   .serviceBox p {
       margin-bottom: 25px;
   }
+/* Why us css start */
+  .serviceListTabs{
+    border: 1px dashed #E7E0E0;
+  }
+ .serviceListTabs .tab-content {
+    border-left: 1px dashed #E7E0E0;
+}
+.serviceListTabs .nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    border: none;
+    display: block;
+}
+ .serviceListTabs .nav .nav-item{
 
-  /* Our centers css start */
+    border-bottom: 1px dashed #E7E0E0;
+    background-color: transparent;
+
+    cursor: pointer;
+ }
+ .serviceListTabs .nav .nav-item:last-child{
+    border-bottom: none;
+ }
+ .serviceListTabs .nav .nav-item .nav-link{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1;
+    padding:0;
+    padding: 48px 90px 48px 90px;
+    color: #B5B4B3;
+    display: block;
+    background: transparent;    
+    transition: var(--transition);
+ }
+.serviceListTabs .nav .nav-item .nav-link:hover, .serviceListTabs .nav .nav-item .nav-link.active{
+    color: var(--blackColor);
+}
+.servicesTabContent{
+    padding: 50px;
+}
+.servicesTabContent img{
+    margin-bottom: 30px;
+}
+/* Our centers css start */
 
 .centerItem {
     margin-bottom: 25px;

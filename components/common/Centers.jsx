@@ -86,7 +86,7 @@ const centersData = [
   ];
 const Centers = () => {
   return (
-    <section className="pt100 ">
+    <section className="pt-5">
     <div className="container">
       <div className="sectionHeader  px-3">
         <div className="sectionTitle">
@@ -99,14 +99,14 @@ const Centers = () => {
                 centersData.slice(0, 4).map((value, i) => (
                   <div className="col-lg-6 col-md-12 mb-5" key={i}>
                     <div className="centerItem">
-                      <div className="centerimage">
+                      <div className="centerimage" >
                         <Link href={value.btnLink} >
                           <Image
                             src={value.image}
                             alt="image"
-                            width={1230}
-                            height={560}
-                          />
+                            width={778}
+                            height={358}
+                            />
                         </Link>
                       </div>
                       <div className="content wrap-color">

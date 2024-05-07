@@ -92,12 +92,13 @@ const FeaturedSlider = () => {
                     height={395}
                   />
                 </div>
-                <div className="fContent">
-                  <h3>{value.title}</h3>
+                <div className="hoverBox overlay">
+                  <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices.</p>
                 </div>
               </div>
-              <div className="fBtn mt-4">
-                <Link href={value.btnLink} className="siteBtn">
+              <div className="fContent mt-3">
+                <h3>{value.title}</h3>
+                <Link href={value.btnLink} className="fBtn siteBtn mt-3">
                   {value.btnLabel}
                 </Link>
               </div>

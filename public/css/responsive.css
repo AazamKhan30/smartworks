@@ -158,5 +158,12 @@
     .nearByImage{
         width: 100%;
     }
+    .serviceListTabs .nav .nav-item .nav-link{
+        font-size: 20px;
+        padding: 20px 25px;
+    }
+    .servicesTabContent{
+        padding: 25px;
+    }
      /* city center page css End */
 }
