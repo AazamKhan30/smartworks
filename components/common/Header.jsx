@@ -95,7 +95,7 @@ export const navItems = [
   },
   {
     label: "Enterprise",
-    url: "#",
+    url: "/enterprise",
   },
   {
     label: "Resources",
@@ -156,7 +156,7 @@ useEffect(()=>{
 }, [])
 
   return (
-    <Navbar
+    <Navbar collapseOnSelect
       expand="lg"
       className={scrolled ? "myNav sticky" : "myNav"}
       id="navbar"
