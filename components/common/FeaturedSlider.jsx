@@ -38,7 +38,7 @@ const featuredData =[
       },
 ]
 
-const FeaturedSlider = () => {
+const FeaturedSlider = ({products}) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -78,6 +78,21 @@ const FeaturedSlider = () => {
   };
 
   return (
+    <section className="pt100 bgBlack text-white">
+    <div className="container">
+      <div className="sectionHeader ">
+        <div className="sectionTitle">
+         
+          <h2 className="mb-3 text-white">
+            Featured <br />
+            properties
+          </h2>
+          <p className="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
     <div className="featuredSlider pb100">
       <Slider {...settings}>
         {featuredData &&
@@ -106,6 +121,8 @@ const FeaturedSlider = () => {
           ))}
       </Slider>
     </div>
+    </div>
+    </section>
   );
 }
 
