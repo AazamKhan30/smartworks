@@ -142,8 +142,7 @@ ul li {
   margin-bottom: 50px;
 
 }
-
-.sectionTitle {
+.sectionHeader .sectionTitle {
   max-width: 830px;
   
 }
@@ -159,14 +158,12 @@ ul li {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 .sectionHeader h2 {
   font-size: 40px;
   font-weight:400;
   margin-bottom: 0;
   color:var(--headingColor);
 }
-
 .py100 {
   padding: 100px 0;
 }
